@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  titre: MyString
+  libelle: MyString
+  dat_pub: 2019-09-14 12:26:29
+  etat: false
+
+two:
+  titre: MyString
+  libelle: MyString
+  dat_pub: 2019-09-14 12:26:29
+  etat: false

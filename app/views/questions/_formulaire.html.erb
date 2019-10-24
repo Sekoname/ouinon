@@ -1,0 +1,6 @@
+<%=form_for @question do |f| %>
+<%=f.text_field :titre%>
+<%=f.text_field :libelle%>
+<%=f.datetime_field :dat_pub%>
+<%=f.submit 'Ajouter'%>
+<% end %>

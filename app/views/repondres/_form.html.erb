@@ -1,0 +1,27 @@
+<%= form_with(model: repondre, local: true) do |form| %>
+  <% if repondre.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(repondre.errors.count, "error") %> prohibited this repondre from being saved:</h2>
+
+      <ul>
+        <% repondre.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :question_id %>
+    <%= form.text_field :question_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

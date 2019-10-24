@@ -1,0 +1,2 @@
+module RepondresHelper
+end
